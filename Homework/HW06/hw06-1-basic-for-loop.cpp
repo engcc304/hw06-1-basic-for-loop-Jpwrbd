@@ -34,12 +34,12 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
+    int numLines;
+    printf("Enter the number of lines: ");
+    scanf("%d", &numLines);
 
-    for (int i = 1; i <= n; i++) {
-        if (i % 2 == 0) {
+    for (int i = 1; i <= numLines; i++) {
+        if (numLines % 2 == 0) {
             printf("(%d) Hello World\n", i);
         } else {
             printf("[%d] Hello World\n", i);
